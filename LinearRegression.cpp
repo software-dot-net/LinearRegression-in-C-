@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-float vector_sumation(vector<float> vec){ //working
+float vector_sumation(vector<float> vec){ 
     float summation = 0;
     for(int i=0;i<vec.size();i++){
         summation += vec[i];
@@ -11,7 +11,7 @@ float vector_sumation(vector<float> vec){ //working
     return summation;
 }
 
-vector<float> vector_subtraction(vector<float> a, vector<float> b){ //workng
+vector<float> vector_subtraction(vector<float> a, vector<float> b){ 
     vector<float> difference;
     if(a.size() != b.size()){
         cout << "invalid matrix \n";
@@ -24,7 +24,7 @@ vector<float> vector_subtraction(vector<float> a, vector<float> b){ //workng
     return difference;
 }
 
-vector<float> dot1d(vector<float> a,vector<float> b){ //working
+vector<float> dot1d(vector<float> a,vector<float> b){ 
     vector<float> product;
     if(a.size() != b.size()){
         cout << "invalid vectors \n";
@@ -37,7 +37,7 @@ vector<float> dot1d(vector<float> a,vector<float> b){ //working
     return product;
 }
 
-vector<vector<int>> dot2d(vector<vector<int>> a,vector<vector<int>> b){ //working
+vector<vector<int>> dot2d(vector<vector<int>> a,vector<vector<int>> b){ 
     vector<vector<int>> product;
     if(a.size() != b[0].size()){
         cout << "invalid matrix \n";
@@ -58,21 +58,21 @@ vector<vector<int>> dot2d(vector<vector<int>> a,vector<vector<int>> b){ //workin
     return product;
 }
 
-vector<float> scalar_dot_vector(vector<float> vec,int c){ //working
+vector<float> scalar_dot_vector(vector<float> vec,int c){ 
     for(int i=0;i<vec.size();i++){
         vec[i] *= c;
     }
     return vec;
 }
 
-vector<float> scalar_add_vector(vector<float> vec,int c){ //working
+vector<float> scalar_add_vector(vector<float> vec,int c){ 
     for(int i=0;i<vec.size();i++){
         vec[i] += c;
     }
     return vec;
 }
 
-vector<float> LinearRegression(vector<float> X,vector<float> Y,float lr,int epochs){ //working
+vector<float> LinearRegression(vector<float> X,vector<float> Y,float lr,int epochs){ 
     vector<float> coefficients,y_hat;
     int n = X.size();
     float c = 0, m = 0,D_m = 0,D_c = 0;
